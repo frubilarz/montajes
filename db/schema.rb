@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160624060935) do
+ActiveRecord::Schema.define(version: 20160624063728) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "clientes", force: :cascade do |t|
+    t.string   "nombre",     null: false
+    t.string   "apellido",   null: false
+    t.string   "empresa",    null: false
+    t.string   "email",      null: false
+    t.integer  "telefono",   null: false
+    t.text     "mensaje",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "comunas", force: :cascade do |t|
     t.string   "nombre"
@@ -23,9 +34,67 @@ ActiveRecord::Schema.define(version: 20160624060935) do
     t.datetime "updated_at",   null: false
   end
 
+  create_table "contactos", force: :cascade do |t|
+    t.string   "nombre",     null: false
+    t.string   "apellido",   null: false
+    t.integer  "telefono"
+    t.string   "email",      null: false
+    t.text     "mensaje",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "estado_proyectos", force: :cascade do |t|
+    t.string   "nombre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "galerias", force: :cascade do |t|
+    t.string   "nombre"
+    t.text     "descripcion"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "infraestructuras", force: :cascade do |t|
+    t.string   "nombre"
+    t.text     "descripcion"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "provedores", force: :cascade do |t|
+    t.string   "nombre",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "provincias", force: :cascade do |t|
     t.string   "nombre"
     t.integer  "region_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "proyectos", force: :cascade do |t|
+    t.date     "fecha_inicio"
+    t.date     "fecha_final"
+    t.text     "descripcion"
+    t.string   "direccion"
+    t.integer  "comuna_id"
+    t.string   "mandante"
+    t.integer  "estado_proyecto_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  create_table "referencias", force: :cascade do |t|
+    t.string   "nombre"
+    t.string   "empresa"
+    t.string   "cargo"
+    t.integer  "telefono"
+    t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -59,4 +128,6 @@ ActiveRecord::Schema.define(version: 20160624060935) do
 
   add_foreign_key "comunas", "provincias"
   add_foreign_key "provincias", "regiones", column: "region_id"
+  add_foreign_key "proyectos", "comunas"
+  add_foreign_key "proyectos", "estado_proyectos"
 end

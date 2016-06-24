@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha_inicio: 2016-06-24
+  fecha_final: 2016-06-24
+  descripcion: MyText
+  direccion: MyString
+  comuna_id: 1
+  mandante: MyString
+  estado_proyecto_id: MyString
+
+two:
+  fecha_inicio: 2016-06-24
+  fecha_final: 2016-06-24
+  descripcion: MyText
+  direccion: MyString
+  comuna_id: 1
+  mandante: MyString
+  estado_proyecto_id: MyString
