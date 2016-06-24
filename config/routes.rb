@@ -1,10 +1,24 @@
 Rails.application.routes.draw do
+  get 'proyectos/', to: 'proyectos#index', as:'proyectos'
+  get 'proyectos/nuevo', as: 'nuevo_proyecto'
+  post 'proyectos/', to: 'proyectos#crear'
+  get 'proyectos/:id/editar', to: 'proyectos#editar', as:'editar_proyecto'
+  get 'proyectos/:id', to: 'proyectos#mostrar', as: 'proyecto'
+  put 'proyectos/update', to: 'proyectos#update'
+  patch 'proyectos/update', to: 'proyectos#update'
+  delete 'proyectos/:id', to: 'proyectos#eliminar'
+
   devise_for :usuarios
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+   root 'proyectos#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

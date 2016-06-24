@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - montajedb@localhost" uuid="17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5">
+      <secret-storage>master_key</secret-storage>
+      <user-name>montaje</user-name>
+      <schema-pattern>montajedb.pg_catalog montajedb.public</schema-pattern>
+      <default-schemas>montajedb.pg_catalog montajedb.public</default-schemas>
+    </data-source>
+  </component>
+</project>

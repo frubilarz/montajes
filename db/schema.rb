@@ -11,20 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160624063728) do
+ActiveRecord::Schema.define(version: 20160624065254) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "clientes", force: :cascade do |t|
-    t.string   "nombre",     null: false
-    t.string   "apellido",   null: false
-    t.string   "empresa",    null: false
-    t.string   "email",      null: false
-    t.integer  "telefono",   null: false
-    t.text     "mensaje",    null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "nombre",      null: false
+    t.text     "descripcion", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "comunas", force: :cascade do |t|
@@ -40,6 +36,23 @@ ActiveRecord::Schema.define(version: 20160624063728) do
     t.integer  "telefono"
     t.string   "email",      null: false
     t.text     "mensaje",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cotizaciones", force: :cascade do |t|
+    t.string   "nombre_completo",                        null: false
+    t.integer  "telefono"
+    t.string   "email",                                  null: false
+    t.text     "mensaje",                                null: false
+    t.date     "fecha",           default: '2016-06-24', null: false
+    t.date     "starts_at",       default: '2016-06-24', null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+  end
+
+  create_table "estado_cotizaciones", force: :cascade do |t|
+    t.string   "nombre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
