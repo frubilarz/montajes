@@ -11,10 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160624055440) do
+ActiveRecord::Schema.define(version: 20160624060935) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "comunas", force: :cascade do |t|
+    t.string   "nombre"
+    t.integer  "provincia_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "provincias", force: :cascade do |t|
+    t.string   "nombre"
+    t.integer  "region_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "regiones", force: :cascade do |t|
+    t.string   "nombre"
+    t.string   "corfo"
+    t.string   "codigo"
+    t.integer  "numero"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "usuarios", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -34,4 +57,6 @@ ActiveRecord::Schema.define(version: 20160624055440) do
   add_index "usuarios", ["email"], name: "index_usuarios_on_email", unique: true, using: :btree
   add_index "usuarios", ["reset_password_token"], name: "index_usuarios_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "comunas", "provincias"
+  add_foreign_key "provincias", "regiones", column: "region_id"
 end
