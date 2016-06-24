@@ -422,3 +422,8 @@ Comuna.create(nombre: 'San Joaquín',provincia_id: ( Provincia.find_by_nombre('S
 Comuna.create(nombre: 'San Ramón',provincia_id: ( Provincia.find_by_nombre('Santiago')).id)
 Comuna.create(nombre: 'Santiago',provincia_id: ( Provincia.find_by_nombre('Santiago')).id)
 Comuna.create(nombre: 'Vitacura',provincia_id: ( Provincia.find_by_nombre('Santiago')).id)
+
+EstadoProyecto.create(nombre: 'Pedido')
+EstadoProyecto.create(nombre: 'En Ejecución')
+EstadoProyecto.create(nombre: 'Finalizado')
+EstadoProyecto.create(nombre: 'Rechazado')

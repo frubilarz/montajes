@@ -4,13 +4,11 @@ Rails.application.routes.draw do
   post 'proyectos/', to: 'proyectos#crear'
   get 'proyectos/:id/editar', to: 'proyectos#editar', as:'editar_proyecto'
   get 'proyectos/:id', to: 'proyectos#mostrar', as: 'proyecto'
-  put 'proyectos/update', to: 'proyectos#update'
-  patch 'proyectos/update', to: 'proyectos#update'
+  put 'proyectos/:id', to: 'proyectos#update'
+  patch 'proyectos/:id', to: 'proyectos#update'
   delete 'proyectos/:id', to: 'proyectos#eliminar'
 
   devise_for :usuarios
-
-
 
 
 

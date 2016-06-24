@@ -35,6 +35,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'adminlte2-rails'
 gem 'adminlte-generators'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+gem 'compass-rails'
+gem 'chosen-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
