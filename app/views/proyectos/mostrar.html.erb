@@ -1,9 +1,40 @@
 <% content_for :content_header  do %>
-  <section class="content-header">
-    <h1>Proyectos <small>#mostrar</small></h1>
-  </section>
+    <section class="content-header">
+      <h1>Proyecto</h1>
+
+      <ol class="breadcrumb">
+        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><%= link_to "proyectos", proyectos_path %></li>
+        <li class="active">Mostrar</li>
+      </ol>
+    </section>
 <% end %>
 
 <section class="content invoice">
-  <p>Find me in app/views/proyectos/mostrar.html.erb</p>
+  <p>
+    <strong>Fecha Inicio: </strong>
+    <%= @proyecto.fecha_inicio %>
+  </p>
+  <p>
+    <strong>Fecha Final: </strong>
+    <%= @proyecto.fecha_final %>
+  </p>
+  <p>
+    <strong>Direccion: </strong>
+    <%= @proyecto.direccion.to_s + @proyecto.comuna.nombre%>
+  </p>
+  <p>
+    <strong>Mandante</strong>
+    <%= @proyecto.mandante %>
+  </p>
+  <p>
+    <strong>Estado Proyecto</strong>
+    <%= @proyecto.estado_proyecto.nombre %>
+  </p>
+  <p>
+    <strong> Descripcion</strong>
+  </p>
+
+  <%= link_to 'Editar', editar_proyecto_url,:class =>"btn btn-success" %>
+  <%= link_to 'Atras', proyectos_url,:class =>"btn btn-info" %>
 </section>
