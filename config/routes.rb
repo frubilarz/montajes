@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get 'clientes/', to: 'clientes#index'
+  get 'clientes/nuevo', as: 'nuevo_cliente'
+  post 'clientes/', to: 'clientes#crear', as: 'crear_cliente'
+  get 'clientes/:id/editar', to: 'clientes#editar', as: 'editar_cliente'
+  get 'clientes/:id', to: 'clientes#mostrar', as: 'cliente'
+  put 'clientes/:id', to: 'clientes#update'
+  patch 'clientes/:id', to: 'clientes#update'
+  delete'clientes/:id', to: 'clientes#eliminar'
+
   get 'proyectos/', to: 'proyectos#index', as:'proyectos'
   get 'proyectos/nuevo', as: 'nuevo_proyecto'
   post 'proyectos/', to: 'proyectos#crear'
