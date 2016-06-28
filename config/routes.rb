@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get 'contactos/', to: 'contactos#index'
+  post 'contactos/crear', to: 'contactos#crear'
+  get 'contactos/:id/editar', to: 'contactos#editar', as: 'editar_contacto'
+  get 'contactos/:id', to: 'contactos#mostrar', as: 'contacto'
+  patch 'contactos/:id', to: 'contactos#update'
+  put   'contactos/:id', to: 'contactos#update'
+  delete'contactos/eliminar', to: 'contactos#eliminar'
+  get 'contactos/nuevo', as: 'nuevo_contacto'
+
   get 'clientes/', to: 'clientes#index'
   get 'clientes/nuevo', as: 'nuevo_cliente'
   post 'clientes/', to: 'clientes#crear', as: 'crear_cliente'
