@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160628000807) do
+ActiveRecord::Schema.define(version: 20160628002317) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,14 +42,13 @@ ActiveRecord::Schema.define(version: 20160628000807) do
   end
 
   create_table "cotizaciones", force: :cascade do |t|
-    t.string   "nombre_completo",                        null: false
+    t.string   "nombre_completo", null: false
     t.integer  "telefono"
-    t.string   "email",                                  null: false
-    t.text     "mensaje",                                null: false
-    t.date     "fecha",           default: '2016-06-24', null: false
-    t.date     "starts_at",       default: '2016-06-24', null: false
-    t.datetime "created_at",                             null: false
-    t.datetime "updated_at",                             null: false
+    t.string   "email",           null: false
+    t.text     "mensaje",         null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.date     "fecha"
   end
 
   create_table "estado_cotizaciones", force: :cascade do |t|
