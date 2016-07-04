@@ -13,127 +13,131 @@
 
 ActiveRecord::Schema.define(version: 20160628002317) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "clientes", force: :cascade do |t|
-    t.string   "nombre",      null: false
-    t.text     "descripcion", null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "nombre",      limit: 255,   null: false
+    t.text     "descripcion", limit: 65535, null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "comunas", force: :cascade do |t|
-    t.string   "nombre"
-    t.integer  "provincia_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.string   "nombre",       limit: 255
+    t.integer  "provincia_id", limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
+  add_index "comunas", ["provincia_id"], name: "fk_rails_23b5d4a1e4", using: :btree
+
   create_table "contactos", force: :cascade do |t|
-    t.string   "nombre",                     null: false
-    t.string   "apellido",                   null: false
-    t.integer  "telefono"
-    t.string   "email",                      null: false
-    t.text     "mensaje",                    null: false
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
-    t.boolean  "estado",     default: false
+    t.string   "nombre",     limit: 255,                   null: false
+    t.string   "apellido",   limit: 255,                   null: false
+    t.integer  "telefono",   limit: 4
+    t.string   "email",      limit: 255,                   null: false
+    t.text     "mensaje",    limit: 65535,                 null: false
+    t.datetime "created_at",                               null: false
+    t.datetime "updated_at",                               null: false
+    t.boolean  "estado",                   default: false
   end
 
   create_table "cotizaciones", force: :cascade do |t|
-    t.string   "nombre_completo", null: false
-    t.integer  "telefono"
-    t.string   "email",           null: false
-    t.text     "mensaje",         null: false
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.string   "nombre_completo", limit: 255,   null: false
+    t.integer  "telefono",        limit: 4
+    t.string   "email",           limit: 255,   null: false
+    t.text     "mensaje",         limit: 65535, null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
     t.date     "fecha"
   end
 
   create_table "estado_cotizaciones", force: :cascade do |t|
-    t.string   "nombre"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "nombre",     limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "estado_proyectos", force: :cascade do |t|
-    t.string   "nombre"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "nombre",     limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "galerias", force: :cascade do |t|
-    t.string   "nombre"
-    t.text     "descripcion"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "nombre",      limit: 255
+    t.text     "descripcion", limit: 65535
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "infraestructuras", force: :cascade do |t|
-    t.string   "nombre"
-    t.text     "descripcion"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "nombre",      limit: 255
+    t.text     "descripcion", limit: 65535
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "provedores", force: :cascade do |t|
-    t.string   "nombre",     null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "nombre",     limit: 255, null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "provincias", force: :cascade do |t|
-    t.string   "nombre"
-    t.integer  "region_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "nombre",     limit: 255
+    t.integer  "region_id",  limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
+
+  add_index "provincias", ["region_id"], name: "fk_rails_79c5aabd3c", using: :btree
 
   create_table "proyectos", force: :cascade do |t|
     t.date     "fecha_inicio"
     t.date     "fecha_final"
-    t.text     "descripcion"
-    t.string   "direccion"
-    t.integer  "comuna_id"
-    t.string   "mandante"
-    t.integer  "estado_proyecto_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.text     "descripcion",        limit: 65535
+    t.string   "direccion",          limit: 255
+    t.integer  "comuna_id",          limit: 4
+    t.string   "mandante",           limit: 255
+    t.integer  "estado_proyecto_id", limit: 4
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
   end
 
+  add_index "proyectos", ["comuna_id"], name: "fk_rails_38ca374b88", using: :btree
+  add_index "proyectos", ["estado_proyecto_id"], name: "fk_rails_880f519c0a", using: :btree
+
   create_table "referencias", force: :cascade do |t|
-    t.string   "nombre"
-    t.string   "empresa"
-    t.string   "cargo"
-    t.integer  "telefono"
-    t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "nombre",     limit: 255
+    t.string   "empresa",    limit: 255
+    t.string   "cargo",      limit: 255
+    t.integer  "telefono",   limit: 4
+    t.string   "email",      limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "regiones", force: :cascade do |t|
-    t.string   "nombre"
-    t.string   "corfo"
-    t.string   "codigo"
-    t.integer  "numero"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "nombre",     limit: 255
+    t.string   "corfo",      limit: 255
+    t.string   "codigo",     limit: 255
+    t.integer  "numero",     limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "usuarios", force: :cascade do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
+    t.string   "email",                  limit: 255, default: "", null: false
+    t.string   "encrypted_password",     limit: 255, default: "", null: false
+    t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",          limit: 4,   default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.inet     "current_sign_in_ip"
-    t.inet     "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.string   "current_sign_in_ip",     limit: 255
+    t.string   "last_sign_in_ip",        limit: 255
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
   end
 
   add_index "usuarios", ["email"], name: "index_usuarios_on_email", unique: true, using: :btree
