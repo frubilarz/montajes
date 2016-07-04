@@ -8,7 +8,7 @@
                 <h4><%= pluralize(@proyecto.errors.count, "error") %> prohibido guardar este proyecto: </h4>
 
                 <ul>
-                  <% @paciente.errors.full_messages.each do |msg| %>
+                  <% @proyecto.errors.full_messages.each do |msg| %>
                       <li><%= msg %></li>
                   <% end %>
                 </ul>

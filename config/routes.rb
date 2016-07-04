@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+
+  get 'proveedores/nuevo', as:'nuevo_proveedor'
+  get 'proveedores', to: 'proveedores#index'
+  post 'proveedores/crear',  to: 'proveedores#crear'
+  get 'proveedores/:id/editar', to: 'proveedores#editar', as: 'editar_proveedor'
+  get 'proveedores/:id', to: 'proveedores#mostrar', as: 'proveedor'
+  patch 'proveedores/:id', to: 'proveedores#update', as: 'proveed'
+  put 'proveedores/:id', to: 'proveedores#update'
+  delete 'proveedores/:id', to: 'proveedores#eliminar'
+
+
+
   get 'contactos/', to: 'contactos#index'
   post 'contactos/crear', to: 'contactos#crear'
   get 'contactos/:id/editar', to: 'contactos#editar', as: 'editar_contacto'
