@@ -2,7 +2,7 @@ class ProveedoresController < ApplicationController
   before_action :set_proveedor, only: [:mostrar, :editar, :update, :eliminar]
 
   def index
-    @proveedores = Provedor.paginate(:page => params[:page], :per_page => 10)
+    @proveedores = Provedor.paginate(:page => params[:page], :per_page => 10).order(id: :asc)
   end
 
   def crear

@@ -41,11 +41,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1182266" vertical-offset="0" max-vertical-offset="1890">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
               <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mostrar.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/proveedores/mostrar.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="468">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mostrar.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/proyectos/mostrar.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.333334" vertical-offset="162" max-vertical-offset="828">
+              <caret line="35" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -54,8 +74,18 @@
       <file leaf-file-name="proveedores_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/proveedores_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1188">
-              <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
+              <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proyectos_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/proyectos_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3546798" vertical-offset="0" max-vertical-offset="1152">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -96,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/region.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20160624060910_create_regions.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20160624060810_create_provincia.rb" />
         <option value="$PROJECT_DIR$/app/models/proyecto.rb" />
@@ -117,7 +146,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20160624065254_create_cotizacions.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20160624063045_create_contactos.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/proyectos_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/proyectos/_forrm.html.erb" />
         <option value="$PROJECT_DIR$/app/views/proyectos/nuevo.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -145,8 +173,10 @@
         <option value="$PROJECT_DIR$/app/views/proveedores/editar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/proveedores/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/proveedores_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/proveedores/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/proveedores/mostrar.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/proveedores_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/proyectos_controller.rb" />
       </list>
     </option>
   </component>
@@ -249,46 +279,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="montaje" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="montaje" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="montaje" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="montaje" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proveedores" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -509,7 +499,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -554,144 +544,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://DATABASE/17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5</OriginalElement>
-          <nodes>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_statistic</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_database</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_ts_template</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_foreign_server</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_statio_all_tables</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_group</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.provincias</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_rules</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_prepared_xacts</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_collation</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_xact_user_tables</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_user</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_activity</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_seclabel</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_matviews</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_timezone_abbrevs</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.comunas</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_inherits</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_all_tables</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_pltemplate</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_aggregate</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_views</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.clientes</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_description</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_am</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_database_conflicts</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_user_mappings</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_opclass</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_statio_all_indexes</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_user_tables</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_available_extension_versions</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_statio_sys_sequences</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_shdepend</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_cursors</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_class</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_statio_sys_indexes</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_constraint</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_depend</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_xact_user_functions</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_roles</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_replication_slots</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_indexes</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_user_functions</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_replication_origin</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_tablespace</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_ssl</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_database</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_ts_config_map</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_auth_members</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_language</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_largeobject</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_shseclabel</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_timezone_names</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_policy</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_trigger</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_largeobject_metadata</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.provedores</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.infraestructuras</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_policies</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_prepared_statements</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_foreign_data_wrapper</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_rewrite</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_sys_tables</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_type</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_statio_user_sequences</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_archiver</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_statio_user_tables</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_amproc</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_statio_all_sequences</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stats</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_attribute</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.regiones</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_default_acl</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.contactos</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_amop</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_proc</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_user_mapping</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_sys_indexes</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_authid</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_opfamily</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.proyectos</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_enum</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_statio_user_indexes</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_tables</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.galerias</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_foreign_table</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_attrdef</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.referencias</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_extension</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_file_settings</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_xact_all_tables</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_replication</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_ts_parser</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_db_role_setting</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_replication_origin_status</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_transform</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_available_extensions</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_event_trigger</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_ts_config</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.schema_migrations</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_bgwriter</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_range</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_operator</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.estado_proyectos</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_xact_sys_tables</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_shadow</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_shdescription</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_conversion</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.public.usuarios</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_ts_dict</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_all_indexes</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_cast</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_settings</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_statio_sys_tables</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_stat_user_indexes</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_index</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_locks</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_seclabels</node>
-            <node x="" y="">17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5.table:montajedb.pg_catalog.pg_namespace</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5395169578622816" x="897.0" y="520.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://db-console:/599d84f8/17b5ca3e-a1ce-48e5-9182-8ed5c969c2b5/">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
@@ -827,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/proyectos/mostrar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.333334" vertical-offset="162" max-vertical-offset="828">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/clientes/mostrar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.742268" vertical-offset="0" max-vertical-offset="582">
@@ -954,14 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/proyectos_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3546798" vertical-offset="0" max-vertical-offset="1152">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="19" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/proyectos/editar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="342">
@@ -1042,14 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/proveedores_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1188">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/proveedores/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="684">
@@ -1060,8 +889,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1182266" vertical-offset="0" max-vertical-offset="1890">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
           <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/proyectos/mostrar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.333334" vertical-offset="162" max-vertical-offset="828">
+          <caret line="35" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/proveedores/mostrar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="468">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/proveedores_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
+          <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/proyectos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3546798" vertical-offset="0" max-vertical-offset="1152">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding />
         </state>
       </provider>

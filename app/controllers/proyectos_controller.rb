@@ -2,7 +2,7 @@ class ProyectosController < ApplicationController
   before_action :set_proyecto, only: [:mostrar, :editar, :update, :eliminar]
 
   def index
-    @proyectos = Proyecto.paginate(:page => params[:page], :per_page => 10)
+    @proyectos = Proyecto.paginate(:page => params[:page], :per_page => 10).order(id: :asc)
   end
 
   def nuevo
