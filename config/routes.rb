@@ -26,6 +26,24 @@ Rails.application.routes.draw do
   patch 'proyectos/:id', to: 'proyectos#update'
   delete 'proyectos/:id', to: 'proyectos#eliminar'
 
+  get 'cotizaciones/', to: 'cotizaciones#index', as:'cotizaciones'
+  get 'cotizaciones/nuevo', as: 'nuevo_cotizacion'
+  post 'cotizaciones/', to: 'cotizaciones#crear'
+  get 'cotizaciones/:id/editar', to: 'cotizaciones#editar', as:'editar_cotizacion'
+  get 'cotizaciones/:id', to: 'cotizaciones#mostrar', as: 'cotizacion'
+  put 'cotizaciones/:id', to: 'cotizaciones#update'
+  patch 'cotizaciones/:id', to: 'cotizaciones#update'
+  delete 'cotizaciones/:id', to: 'cotizaciones#eliminar'
+
+  get 'galerias/', to: 'galerias#index', as:'galerias'
+  get 'galerias/nuevo', as: 'nuevo_galeria'
+  post 'galerias/', to: 'galerias#crear'
+  get 'galerias/:id/editar', to: 'galerias#editar', as:'editar_galeria'
+  get 'galerias/:id', to: 'galerias#mostrar', as: 'galeria'
+  put 'galerias/:id', to: 'galerias#update'
+  patch 'galerias/:id', to: 'galerias#update'
+  delete 'galerias/:id', to: 'galerias#eliminar'
+
   devise_for :usuarios
 
 

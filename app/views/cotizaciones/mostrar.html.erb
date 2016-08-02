@@ -1,0 +1,36 @@
+<% content_for :content_header  do %>
+    <section class="content-header">
+      <h1>Cotizacion</h1>
+
+      <ol class="breadcrumb">
+        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><%= link_to "cotizacion", cotizaciones_path %></li>
+        <li class="active">Mostrar</li>
+      </ol>
+    </section>
+<% end %>
+
+<section class="content invoice">
+
+  <p>
+    <strong>Correo:</strong>
+    <%= @cotizacion.correo %>
+  </p>
+
+  <p>
+    <strong>Fecha:</strong>
+    <%= @cotizacion.fecha %>
+  </p>
+
+  <p>
+    <strong>Nombre:</strong>
+    <%= @cotizacion.nombre %>
+  </p>
+
+  <p>
+    <strong>Cotizacion:</strong>
+    <%= @cotizacion.cotizacion %>
+  </p>
+  <%= link_to 'Editar', editar_cotizacion_url,:class =>"btn btn-success" %>
+  <%= link_to 'Atras', cotizacion_url,:class =>"btn btn-info" %>
+</section>
