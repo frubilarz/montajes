@@ -1,6 +1,6 @@
 class AddAttachmentAvatarToGaleria < ActiveRecord::Migration
   def self.up
-    change_table :galeria do |t|
+    change_table :galerias do |t|
       t.attachment :avatar
     end
   end
