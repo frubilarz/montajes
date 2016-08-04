@@ -6,11 +6,11 @@ class GaleriasController < ApplicationController
   end
 
   def nuevo
-    @galerias = Galeria.new
+    @galeria = Galeria.new
   end
 
   def crear
-    @galerias = Galeria.new(galeria_params)
+    @galeria = Galeria.new(galeria_params)
     respond_to do |format|
       if @galeria.save
         format.html{redirect_to @galeria, notice:  'Imagen Guardada Con Exito'}
