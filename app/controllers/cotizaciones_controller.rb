@@ -20,7 +20,6 @@ class CotizacionesController < ApplicationController
 
   def crear
     @cotizacion = Cotizacion.new(cotizacion_params)
-
     respond_to do |format|
       if @cotizacion.save
         format.html { redirect_to @cotizacion, notice: 'Cotizacion realizada con Exito' }
@@ -62,6 +61,6 @@ class CotizacionesController < ApplicationController
 
 
     def cotizacion_params
-      params.require(:cotizacion).permit(:correo, :fecha, :nombre, :cotizacion)
+      params.require(:cotizacion).permit(:nombre_completo,:telefono,:email,:mensaje, :fecha)
     end
 end

@@ -14,7 +14,7 @@
 
   <p>
     <strong>Correo:</strong>
-    <%= @cotizacion.correo %>
+    <%= @cotizacion.email %>
   </p>
 
   <p>
@@ -24,13 +24,9 @@
 
   <p>
     <strong>Nombre:</strong>
-    <%= @cotizacion.nombre %>
+    <%= @cotizacion.nombre_completo %>
   </p>
 
-  <p>
-    <strong>Cotizacion:</strong>
-    <%= @cotizacion.cotizacion %>
-  </p>
   <%= link_to 'Editar', editar_cotizacion_url,:class =>"btn btn-success" %>
-  <%= link_to 'Atras', cotizacion_url,:class =>"btn btn-info" %>
+  <%= link_to 'Atras', cotizaciones_path,:class =>"btn btn-info" %>
 </section>
